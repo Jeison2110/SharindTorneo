@@ -23,5 +23,6 @@ db.Equipos.find().pretty()
 
 
 //Tercer caso de Prueba//
+db.adminCommand({ listShards:1 })
 db = (new Mongo("localhost:20006")).getDB("Torneo")
 show collections
